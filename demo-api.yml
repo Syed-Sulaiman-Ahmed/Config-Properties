@@ -1,5 +1,3 @@
-server:
-  port: 8082
 
 spring:
   boot:
@@ -12,3 +10,5 @@ spring:
      web:
        exposure:
          inculde: "*"
+
+message: "This is a testing message from config server"
