@@ -1,11 +1,17 @@
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/usman_practise
+    username: root
+    password: tiger
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   boot:
     admin:
       client:
         url: http://localhost:1111
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+server:
+  port: 8086
